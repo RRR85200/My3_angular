@@ -1,6 +1,17 @@
 //author P.Tummala
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngRoute']);
+app.config(['$routeProvider',function($routeProvider){
+    $routeProvider.when('login',{
+        templateUrl:'login.html',
+        controller:'loginController'
+    }).otherwise({
+        redirectTo:'index.html'
+    })
+}]);
+app.controller('loginController',function($scope){
+    $scope.someWord = "Click To Check details";
+});
 app.controller('myCtrl', function($scope) {
     $scope.application = "My3/IIS tech touch-Angular concepts";
     var day;

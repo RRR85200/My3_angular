@@ -1,3 +1,6 @@
+body{
+	background-color:black;
+}
 .day {
 	text-align: center;
 	color:white;
@@ -11,4 +14,7 @@
 }
 .centerText {
 	text-align: center;
+}
+.textCenter{
+	color:floralwhite;
 }

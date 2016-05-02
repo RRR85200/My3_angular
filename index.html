@@ -8,12 +8,14 @@
     <link rel="stylesheet/less" type="text/css" href="index.less">
     <link rel="import" href="test.html">
 </head>
-<body>   <div ng-controller="myCtrl">
-            <h1 class="text-center">{{application}}</h1>
+<body>
+<div ng-controller="myCtrl">
+            <h1 class="text-center textCenter">{{application}}</h1>
             <h5 class="day datenTime">{{idx}}</h5>
             <p>{{fullDate}}</p>
             <button class="btn btn-primary date">{{d | date :'MMM-dd-yyyy'}}</button>
-            <a href="www.google.com">Link to Google</a>
+<div ng-view></div>
+            <a href="login">Click Here To Login</a>
     </div>
 <div>
 </div>
@@ -25,6 +27,7 @@
     </tr>
 </span>
 <script src="app/bower_components/angular/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <script type="text/javascript" src="server.js"></script>
 <script src="less.js-2.5.3/dist/less.min.js"></script>
